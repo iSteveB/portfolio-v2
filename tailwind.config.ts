@@ -18,8 +18,8 @@ const config: Config = {
 				neutral: '#FDFDFC', //white
 				base: {
 					900: '#030712', //black
-					800: '#2D2E32', //grey
-					700: '#696971', //lightgray
+					800: '#2A2B2F', //darkgrey
+					700: '#2D2E32', //lightgray
 				},
 			},
 		},
