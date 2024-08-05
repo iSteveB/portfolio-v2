@@ -14,7 +14,7 @@ const Navigation = () => {
 			<Button text='Accueil' icon={<HomeIcon />} />
 			<Button text='À propos' icon={<UserIcon />} />
 			<Button text='Portfolio' icon={<WorkIcon />} />
-			<Button text='Copier mon mail' icon={<MailIcon />} />
+			<Button text='Copier mon mail' icon={<MailIcon />} email='contact@stevebasse.fr' />
 		</motion.nav>
 	);
 };
