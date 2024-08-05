@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 
 const Header = () => {
 	return (
-		<header className='w-full flex justify-between px-6 py-4 bg-base-900'>
+		<header className='flex w-full justify-between bg-base-900 px-6 py-4'>
 			<Logo />
 			<Button />
 		</header>
