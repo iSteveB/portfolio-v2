@@ -18,9 +18,13 @@ const config: Config = {
 				neutral: '#FDFDFC', //white
 				base: {
 					900: '#030712', //black
-					800: '#2A2B2F', //darkgrey
+					850: '#25262B', //darkgrey
+					800: '#2A2B2F', //grey
 					700: '#2D2E32', //lightgray
 				},
+			},
+			backgroundImage: {
+				'hero-picture': "url('/assets/images/hero-picture.png')",
 			},
 		},
 	},
