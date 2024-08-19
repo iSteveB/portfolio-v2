@@ -4,13 +4,14 @@ import HeroPicture from './assets/images/hero-picture.webp';
 
 import Section from './components/ui/Section';
 import Card from './components/ui/Card';
+import Tag from './components/ui/Tag';
 import Particles from './components/ui/Particles';
 const petrona = Petrona({ subsets: ['latin'], weight: '400' });
 
 export default function Home() {
 	return (
 		<main>
-			<Section color='light' css="overflow-hidden">
+			<Section color='light' css='overflow-hidden'>
 				<div className='flex items-center justify-center gap-52'>
 					<div className={petrona.className + 'flex flex-col gap-10'}>
 						<div>
@@ -24,10 +25,17 @@ export default function Home() {
 							<span>
 								Développeur web <br /> Next.js & NestJS
 							</span>
+							<br />
+							<div className='mt-4 flex gap-2'>
+								<Tag text='Front-End' />
+								<Tag text='Full-Stack' />
+							</div>
 						</h1>
 					</div>
 					<div className='relative flex w-1/3'>
-					<div className=''><Particles /></div>
+						<div>
+							<Particles />
+						</div>
 						<Image
 							src={HeroPicture}
 							alt='Steve Basse'
@@ -59,26 +67,28 @@ export default function Home() {
 							Toujours coder comme si la personne qui maintiendra
 							votre code est un psychopathe violent qui sait où
 							vous habitez.
-						</q><span> - John Woods</span>
+						</q>
+						<span> - John Woods</span>
 						<p>
-							Moi c’est Steve, développeur web depuis 4 ans. J&aspos;ai
-							troqué ma carrière de cuistot contre celle de dev,
-							passant de la création de plats à la création d&aspos;apps
-							web! Un sacré changement, mais la créativité et la
-							rigueur sont toujours au menu ! Ce que j&aspos;aime dans
-							le développement web ? On a jamais fini d’apprendre
-							et chaque jour est différent, avec son lot de
-							mauvaises surprises mais aussi de bonnes (oui, oui!
-							). Déboggage, conception de nouvelles
-							fonctionnalités, test... Pas le temps de s&aspos;ennuyer !
-							J’adore transformer des idées en code et pour ça
-							j’utilise React/Next.js et Node.js/Nest.js ⚡.Mon
-							objectif ? Continuer à progresser, jour après jour.
-							Comme le bon vin, je compte bien m&aspos;améliorer avec le
-							temps (sans les maux de tête).Si vous cherchez un
-							développeur passionné, créatif et toujours partant
-							pour relever de nouveaux défis, contactez-moi en
-							cliquant juste ici !
+							Moi c’est Steve, développeur web depuis 4 ans.
+							J&aspos;ai troqué ma carrière de cuistot contre
+							celle de dev, passant de la création de plats à la
+							création d&aspos;apps web! Un sacré changement, mais
+							la créativité et la rigueur sont toujours au menu !
+							Ce que j&aspos;aime dans le développement web ? On a
+							jamais fini d’apprendre et chaque jour est
+							différent, avec son lot de mauvaises surprises mais
+							aussi de bonnes (oui, oui! ). Déboggage, conception
+							de nouvelles fonctionnalités, test... Pas le temps
+							de s&aspos;ennuyer ! J’adore transformer des idées
+							en code et pour ça j’utilise React/Next.js et
+							Node.js/Nest.js ⚡.Mon objectif ? Continuer à
+							progresser, jour après jour. Comme le bon vin, je
+							compte bien m&aspos;améliorer avec le temps (sans
+							les maux de tête).Si vous cherchez un développeur
+							passionné, créatif et toujours partant pour relever
+							de nouveaux défis, contactez-moi en cliquant juste
+							ici !
 						</p>
 					</div>
 				</div>
