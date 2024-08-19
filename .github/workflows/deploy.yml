@@ -11,15 +11,17 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Setup Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: '20'
 
     - name: Setup pnpm
-      run: npm install -g pnpm
+      uses: pnpm/action-setup@v2
+       with:
+        version: 9.7.0
 
     - name: Install dependencies
       run: pnpm install
@@ -28,7 +30,7 @@ jobs:
       run: pnpm run build
 
     - name: Deploy to o2switch via FTP
-      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
