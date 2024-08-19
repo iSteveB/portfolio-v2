@@ -1,6 +1,6 @@
 import { Petrona } from 'next/font/google';
 import Image from 'next/image';
-import HeroPicture from './assets/images/hero-picture.png';
+import HeroPicture from './assets/images/hero-picture.webp';
 
 import Section from './components/ui/Section';
 import Card from './components/ui/Card';
