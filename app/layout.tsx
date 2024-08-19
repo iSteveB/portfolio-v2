@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='fr'>
-			<body className={`${athiti.className} bg-base-700`}>
+			<body className={athiti.className}>
 				<Header />
 				<Navigation />
 				{children}
