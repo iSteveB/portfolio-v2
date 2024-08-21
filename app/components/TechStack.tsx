@@ -1,23 +1,23 @@
 import Collapse from './ui/Collapse';
-import reactIcon from '../../public/react.svg';
-import nodeIcon from '../../public/nodejs.svg';
-import expressIcon from '../../public/express.svg';
-import nestjsIcon from '../../public/nestjs.svg';
-import typescriptIcon from '../../public/typescript.svg';
-import sassIcon from '../../public/sass.svg';
-import nextjsIcon from '../../public/nextjs.svg';
-import tailwindIcon from '../../public/tailwind.svg';
-import reduxToolkitIcon from '../../public/redux.svg';
-import mongodbIcon from '../../public/mongodb.svg';
-import postgresqlIcon from '../../public/postgresql.svg';
-import prismaIcon from '../../public/prisma.svg';
-import githubIcon from '../../public/github.svg';
-import javascriptIcon from '../../public/javascript.svg';
-import sanityIcon from '../../public/sanity.svg';
-//import figmaIcon from '../../public/figma.svg';
-// import notionIcon from '../../public/notion.svg';
-// import jiraIcon from '../../public/jira.svg';
-// import postmanIcon from '../../public/postman.svg';
+import reactIcon from '../../public/icons/react.svg';
+import nodeIcon from '../../public/icons/nodejs.svg';
+import expressIcon from '../../public/icons/express.svg';
+import nestjsIcon from '../../public/icons/nestjs.svg';
+import typescriptIcon from '../../public/icons/typescript.svg';
+import sassIcon from '../../public/icons/sass.svg';
+import nextjsIcon from '../../public/icons/nextjs.svg';
+import tailwindIcon from '../../public/icons/tailwind.svg';
+import reduxToolkitIcon from '../../public/icons/redux.svg';
+import mongodbIcon from '../../public/icons/mongodb.svg';
+import postgresqlIcon from '../../public/icons/postgresql.svg';
+import prismaIcon from '../../public/icons/prisma.svg';
+import githubIcon from '../../public/icons/github.svg';
+import javascriptIcon from '../../public/icons/javascript.svg';
+import sanityIcon from '../../public/icons/sanity.svg';
+import figmaIcon from '../../public/icons/figma.svg';
+import notionIcon from '../../public/icons/notion.svg';
+import jiraIcon from '../../public/icons/jira.svg';
+import postmanIcon from '../../public/icons/postman.svg';
 
 const TechStack = () => {
 	const frontendStack = [
@@ -45,10 +45,10 @@ const TechStack = () => {
 
 	const toolsStack = [
 		{ name: 'GitHub', icon: githubIcon },
-		//{ name: 'Figma', icon: figmaIcon },
-		// { name: 'Notion', icon: notionIcon },
-		// { name: 'Jira', icon: jiraIcon },
-    // { name: 'Postman', icon: postmanIcon },
+		{ name: 'Figma', icon: figmaIcon },
+		{ name: 'Notion', icon: notionIcon },
+		{ name: 'Jira', icon: jiraIcon },
+    { name: 'Postman', icon: postmanIcon },
 	];
 
 	return (
