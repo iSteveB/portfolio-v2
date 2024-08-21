@@ -7,6 +7,8 @@ import Card from './components/ui/Card';
 import Tag from './components/ui/Tag';
 import Particles from './components/ui/Particles';
 import Link from 'next/link';
+import TechStack from './components/TechStack';
+
 const petrona = Petrona({ subsets: ['latin'], weight: '400' });
 
 export default function Home() {
@@ -47,8 +49,8 @@ export default function Home() {
 				</div>
 			</Section>
 			<Section color='dark'>
-				<div className='flex items-start justify-center gap-8 pt-20'>
-					<div className='flex w-1/2 flex-col gap-5'>
+				<div className='flex items-center justify-center gap-8 py-20'>
+					<div className='flex w-1/2 flex-col gap-6'>
 						<Card
 							title='Performance'
 							text="Optimiser les sites web, pour augmenter la vitesse de chargement des pages et l'expérience utilisateur."
@@ -62,9 +64,9 @@ export default function Home() {
 							text='Améliorer la visibilité en ligne en utilisant des techniques de référencement naturel.'
 						/>
 					</div>
-					<div className='w-1/2 text-neutral'>
-						<h2 className='text-4xl text-neutral'>À propos</h2>
-						<mark className='rounded-sm bg-accent-100 px-2 leading-7'>
+					<div className='w-1/2 text-lg text-neutral'>
+						<h2 className='pb-4 text-5xl text-neutral'>À propos</h2>
+						<mark className=' rounded-sm bg-accent-100 px-2 leading-8'>
 							<q className='font-semibold'>
 								Toujours coder comme si la personne qui
 								maintiendra votre code est un psychopathe
@@ -135,6 +137,10 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+			</Section>
+
+			<Section color='light'>
+				<TechStack />
 			</Section>
 		</main>
 	);
