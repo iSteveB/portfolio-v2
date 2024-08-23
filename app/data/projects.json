@@ -1,0 +1,12 @@
+[
+  { "id": 1, "title": "724 Events", "size": "small", "color": "tertiary" },
+  { "id": 2, "title": "Yummy Nouille", "size": "large", "color": "primary" },
+  { "id": 3, "title": "ManyScan", "size": "small", "color": "secondary" },
+  { "id": 4, "title": "AL Studio", "size": "large", "color": "secondary" },
+  { "id": 5, "title": "Kasa", "size": "small", "color": "tertiary" },
+  { "id": 6, "title": "World Map", "size": "small", "color": "primary" },
+  { "id": 7, "title": "Homemade", "size": "small", "color": "primary" },
+  { "id": 8, "title": "ArgentBank", "size": "small", "color": "tertiary" },
+  { "id": 9, "title": "Menu Maker", "size": "small", "color": "secondary" },
+  { "id": 10, "title": "Nina Carducci", "size": "small", "color": "tertiary" }
+]
