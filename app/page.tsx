@@ -7,7 +7,7 @@ import Card from './components/ui/Card';
 import Tag from './components/ui/Tag';
 import Particles from './components/ui/Particles';
 import Link from 'next/link';
-import TechStack from './components/TechStack';
+import TechStack from './components/section/TechStack';
 
 const petrona = Petrona({ subsets: ['latin'], weight: '400' });
 
