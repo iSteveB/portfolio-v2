@@ -8,6 +8,7 @@ import Tag from './components/ui/Tag';
 import Particles from './components/ui/Particles';
 import Link from 'next/link';
 import TechStack from './components/section/TechStack';
+import BentoGrid from './components/section/BentoGrid';
 
 const petrona = Petrona({ subsets: ['latin'], weight: '400' });
 
@@ -141,6 +142,10 @@ export default function Home() {
 
 			<Section color='light'>
 				<TechStack />
+			</Section>
+
+			<Section color='dark'>
+			<BentoGrid />
 			</Section>
 		</main>
 	);
