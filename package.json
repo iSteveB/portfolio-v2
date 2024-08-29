@@ -14,12 +14,14 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
     "all": "link:@/tsparticles/all",
+    "clsx": "^2.1.1",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "framer-motion": "^11.3.21",
     "next": "14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
     "@types/node": "^20.14.14",
