@@ -1,12 +1,336 @@
+
 [
-  { "id": 1, "title": "724 Events", "size": "small", "color": "tertiary" },
-  { "id": 2, "title": "Yummy Nouille", "size": "large", "color": "primary" },
-  { "id": 3, "title": "ManyScan", "size": "small", "color": "secondary" },
-  { "id": 4, "title": "AL Studio", "size": "large", "color": "secondary" },
-  { "id": 5, "title": "Kasa", "size": "small", "color": "tertiary" },
-  { "id": 6, "title": "World Map", "size": "small", "color": "primary" },
-  { "id": 7, "title": "Homemade", "size": "small", "color": "primary" },
-  { "id": 8, "title": "ArgentBank", "size": "small", "color": "tertiary" },
-  { "id": 9, "title": "Menu Maker", "size": "small", "color": "secondary" },
-  { "id": 10, "title": "Nina Carducci", "size": "small", "color": "tertiary" }
+  {
+    "id": 1,
+    "title": "724 Events",
+    "image": "724-events",
+    "size": "small",
+    "color": "tertiary",
+    "url": "",
+    "github": "https://github.com/iSteveB/Debuggez-une-application-React.JS",
+    "description": "724 events est un projet de débogage et finalisation d'un site web one-page pour une agence événementielle. Le site existant présentait des bugs qui entravaient son bon fonctionnement. L'objectif était d'identifier ces problèmes à l'aide d'outils comme Chrome DevTools et React Developer Tools, puis de les résoudre en utilisant JavaScript et React. Le projet impliquait également la complétion d'un cahier de recette pour assurer la qualité du site à travers des tests unitaires et fonctionnels.",
+    "stack": ["javascript", "react", "jest"],
+    "objectives": [
+			"Examiner et comprendre le code existant du site one-page",
+      "Identifier et résoudre les bugs présents dans le site",
+      "Compléter le cahier de recette avec des scénarios de test exhaustifs",
+      "Assurer le bon fonctionnement de toutes les fonctionnalités du site",
+      "Utiliser efficacement les outils de développement comme Chrome DevTools et React Developer Tools",
+      "Exécuter et maintenir les tests avec Jest"
+    ],
+    "keyFeatures": [
+			"Utilisation de React Developer Tools pour analyser l'état des composants",
+      "Débogage du site à l'aide de Chrome DevTools",
+      "Rédaction et exécution de tests unitaires et fonctionnels avec Jest"
+    ],
+    "role": "Frontend",
+    "challenges": "Un défi majeur dans ce projet était de comprendre et de déboguer le code écrit par un autre développeur. Cela nécessitait une analyse approfondie du code existant, une compréhension des intentions originales du développeur, et la capacité à identifier les sources des bugs sans connaissance préalable du projet. Ce défi a été surmonté en utilisant systématiquement les outils de développement, en analysant méticuleusement le comportement de chaque composant, et en documentant soigneusement chaque problème et sa solution dans le cahier de recette. L'utilisation de Jest pour les tests a facilité la vérification continue des corrections apportées.",
+		"date": "2024-07-05",
+    "inProgress": false
+  },
+  {
+    "id": 2,
+    "title": "OhMyFood",
+    "image": "ohmyfood",
+    "size": "large",
+    "color": "primary",
+    "url": "https://yummynouilles.com",
+    "github": "yummynouilles",
+    "description": "OhMyFood est un site web mobile-first pour une start-up de restauration. Le site répertorie les menus de restaurants gastronomiques et permet aux clients de composer leur repas à l'avance.",
+    "stack": ["sass", "html5"],
+    "objectives": [
+      "Créer un site responsive avec une approche mobile-first",
+      "Intégrer des maquettes pour mobile et desktop",
+      "Implémenter des animations CSS complexes",
+      "Utiliser SASS avec le pattern 7-1",
+      "Versionner le projet avec Git et GitHub"
+    ],
+    "keyFeatures": [
+      "Structure modulaire du projet grâce au pattern 7-1 de SASS",
+      "Animations CSS pour les effets de survol, transitions de page et chargement",
+      "Gestion de l'ellipse pour les textes trop longs en version mobile",
+      "Optimisation de la réutilisation du code entre les pages de restaurants"
+    ],
+    "role": "Frontend",
+    "challenges": "Un défi majeur était la mise en œuvre des animations CSS complexes, notamment pour le chargement des pages et l'apparition progressive des éléments du menu. Ce défi a été surmonté en décomposant chaque animation en étapes, en utilisant les capacités avancées de SASS pour créer des mixins réutilisables, et en testant rigoureusement sur différents appareils pour garantir une performance optimale.",
+    "date": "2024-04-29",
+    "inProgress": false
+  },
+  {
+    "id": 3,
+    "title": "ManyScan",
+    "image": "manyscan",
+    "size": "small",
+    "color": "secondary",
+    "url": "",
+    "github": "https://github.com/iSteveB/ManyScan",
+    "description": "ManyScan est une application web de lecture de mangas en ligne développée en collaboration avec un collègue de formation et une web designeuse. ManyScan offre une expérience de lecture fluide et personnalisable. L'application s'appuie sur l'API MangaDex pour fournir un large catalogue de mangas, avec des fonctionnalités avancées telles que la lecture horizontale ou verticale, la gestion des favoris, et une interface utilisateur soignée.",
+    "stack": ["nextjs", "tailwind", "express", "nodejs", "prisma", "mongodb", "typescript"],
+    "objectives": [
+			"Créer une interface utilisateur intuitive et responsive pour la lecture de mangas",
+			"Intégrer l'API MangaDex pour accéder à une vaste bibliothèque de mangas",
+			"Implémenter un système de gestion des favoris pour les utilisateurs",
+			"Développer une API backend robuste pour gérer les requêtes et le traitement des données",
+			"Utiliser Prisma pour une gestion efficace de la base de données",
+			"Mettre en place une architecture scalable et maintenable avec Next.js et TypeScript"
+		],
+    "keyFeatures": [
+			"Développement backend : Création d'une API personnalisée pour interagir avec MangaDex, incluant la récupération des données des mangas, des couvertures et des statistiques",
+			"Intégration frontend : Implémentation fidèle des maquettes fournies par la web designeuse",
+			"Fonctionnalités de lecture : Options de lecture horizontale (au scroll) et verticale (comme un livre)",
+			"Gestion des données : Utilisation de Prisma pour une interaction efficace avec la base de données",
+			"Travail d'équipe : Utilisation de Trello et de la méthodologie agile pour une collaboration efficace",
+			"Pair programming : Sessions de travail à distance utilisant VS Code pour le développement collaboratif"
+		],
+    "role": "FullStack",
+    "challenges": "Un défi majeur a été l'optimisation des performances lors de la récupération et du traitement des données de l'API MangaDex. La gestion de grandes quantités de données, notamment pour les couvertures et les statistiques des mangas, a nécessité la mise en place d'un système de mise en cache local et de pagination efficace. Cette approche a permis d'améliorer significativement les temps de chargement et l'expérience utilisateur, tout en réduisant la charge sur l'API externe.",
+    "date": "Septembre 2023 - Décembre 2023",
+    "inProgress": true
+  },
+  {
+    "id": 4,
+    "title": "AL Studio",
+    "image": "al-studio",
+    "size": "large",
+    "color": "secondary",
+    "url": "https://www.alstudiophotos.com/",
+    "github": "https://github.com/iSteveB/alstudio",
+    "description": "AL Studio est un portfolio développé pour une photographe professionnelle. Ce site web moderne et élégant met en valeur le travail de l'artiste à travers une galerie interactive, des informations tarifaires claires, et un formulaire de contact intégré. Utilisant une stack technique avancée comprenant Next.js 14, TypeScript, TailwindCSS, et Sanity comme HCMS, AL Studio offre une expérience utilisateur fluide et visuellement attrayante, optimisée pour les performances et le référencement.",
+    "stack": ["nextjs", "tailwind", "sanity", "typescript", "figma", "seo"],
+    "objectives":[
+			"Créer un portfolio en ligne attrayant et fonctionnel pour une photographe professionnelle",
+			"Développer une interface utilisateur intuitive et responsive",
+			"Intégrer un système de gestion de contenu (CMS) pour faciliter la mise à jour du portfolio",
+			"Optimiser les performances et le SEO du site",
+			"Implémenter des animations fluides pour améliorer l'expérience utilisateur",
+			"Fournir un moyen simple pour les clients potentiels de contacter la photographe"
+		],
+    "keyFeatures": [
+			"Galerie photo interactive et responsive",
+			"Système de tri des photos par catégories",
+			"Page de tarifs claire et esthétique",
+			"Formulaire de contact avec envoi d'e-mails",
+			"Animations fluides pour une meilleure expérience utilisateur",
+			"Optimisation SEO avancée"
+		],
+    "role": "Frontend",
+    "challenges": "L'un des principaux défis était de créer une galerie photo performante et visuellement attrayante, capable de gérer efficacement un grand nombre d'images de haute qualité sans compromettre les temps de chargement du site.Pour relever ce défi, j'ai mis en place une stratégie d'optimisation multi-niveaux. J'ai utilisé les fonctionnalités d'optimisation d'images de Next.js pour le chargement progressif et le redimensionnement automatique. De plus, j'ai implémenté une logique de chargement paresseux (lazy loading) pour les images, assurant que seules les images visibles dans le viewport sont chargées initialement. L'utilisation de Sanity comme CMS a permis une gestion efficace des assets, tandis que l'implémentation d'un système de cache côté client a amélioré les performances lors de la navigation. Ces optimisations, combinées à une conception soigneuse de l'interface utilisateur, ont permis d'obtenir une galerie fluide et réactive, offrant une expérience utilisateur de haute qualité tout en maintenant des temps de chargement rapides.",
+    "date": "2024-01-15",
+    "inProgress": false
+  },
+  {
+    "id": 5,
+    "title": "Kasa",
+    "image": "kasa",
+    "size": "small",
+    "color": "tertiary",
+    "url": "kasa-isteveb.vercel.app",
+    "github": "https://github.com/iSteveB/kasa",
+    "description": "Kasa est une application web de location d'appartements entre particuliers, développée dans le cadre d'une formation pour simuler un projet professionnel. Ce projet front-end utilise React et React Router pour créer une interface utilisateur moderne et réactive, en se basant sur des maquettes Figma et des données simulées. L'application met en œuvre des fonctionnalités clés telles qu'une galerie de logements, des pages de détails, un système de navigation, et des composants réutilisables comme le carrousel et les menus déroulants (Collapse).",
+    "stack": ["react", "sass", "figma"],
+    "objectives": [
+			"Développer une application React fonctionnelle et responsive",
+			"Implémenter le routage avec React Router",
+			"Créer des composants React réutilisables (Banner, Card, Collapse, Slideshow)",
+			"Intégrer les maquettes Figma en respectant le design et les fonctionnalités",
+			"Utiliser SASS avec le pattern 7-1 pour une gestion efficace des styles",
+			"Gérer les cas d'erreur et les redirections",
+			"Optimiser les performances et l'expérience utilisateur"
+		],
+    "keyFeatures": [
+			"Page d'accueil avec liste de logements",
+			"Page de détails de logement avec carrousel de photos",
+			"Page À Propos avec menus déroulants (Collapse)",
+			"Navigation fluide entre les pages",
+			"Gestion des erreurs et page 404 personnalisée",
+			"Design responsive"
+		],
+    "role": "Frontend",
+    "challenges":"L'un des principaux défis était l'implémentation du carrousel (Slideshow) avec ses fonctionnalités spécifiques, notamment la gestion du défilement circulaire des images et l'affichage conditionnel des contrôles. Pour relever ce défi, j'ai mis en place une logique de state pour gérer l'index de l'image courante. J'ai implémenté des fonctions pour incrémenter et décrémenter cet index de manière circulaire, en utilisant le modulo pour revenir au début ou à la fin de la liste d'images selon le besoin. J'ai également ajouté des conditions pour n'afficher les flèches de navigation et la numérotation que lorsqu'il y a plus d'une image. Enfin, j'ai utilisé des transitions CSS pour créer une animation fluide lors du changement d'image, améliorant ainsi l'expérience utilisateur.",
+    "date": "20224-06-06",
+    "inProgress": false
+  },
+  {
+    "id": 6,
+    "title": "Where In The World",
+    "image": "where-in-the-world",
+    "size": "small",
+    "color": "primary",
+    "url": "https://world-map-v01.vercel.app/",
+    "github": "https://github.com/iSteveB/World-map",
+    "description": "Where In The World est une application éducative interactive qui permet aux utilisateurs d'explorer et d'apprendre sur les pays du monde entier. Développée dans le cadre d'un défi Frontend Mentor, cette application utilise React et React Router pour créer une interface dynamique et responsive. Un quizz géographie est en cours de développement pour rendre l'apprentissage plus engageant et amusant.",
+    "stack": ["react", "sass"],
+    "objectives": [
+			"Développer une application React performante et responsive",
+			"Intégrer une API externe pour récupérer les données des pays",
+			"Implémenter des fonctionnalités de recherche et de filtrage",
+			"Créer des pages de détails dynamiques pour chaque pays",
+			"Mettre en place une navigation fluide entre les pays et leurs voisins",
+			"Concevoir une interface utilisateur intuitive et esthétique",
+			"Implémenter un mode sombre/clair pour améliorer l'accessibilité"
+		],
+    "keyFeatures": [
+			"Liste complète des pays sur la page d'accueil",
+			"Recherche de pays par nom",
+			"Filtrage des pays par région",
+			"Pages de détails pour chaque pays",
+			"Navigation vers les pays frontaliers",
+			"Design responsive",
+			"Mode sombre/clair basculable"
+		],
+    "role": "Frontend",
+    "challenges": [
+			{
+				"description": "L'un des principaux défis était la création de pages dynamiques pour chaque pays et l'intégration fluide des liens vers les pays frontaliers.",
+				"resolution": "Pour relever ce défi, j'ai utilisé React Router pour générer des routes dynamiques pour chaque pays. J'ai créé un composant de page de détails réutilisable qui se remplit avec les données du pays sélectionné. Pour les pays frontaliers, j'ai implémenté un système de chargement à la demande. Lorsqu'un utilisateur clique sur un pays frontalier, l'application récupère les données nécessaires et met à jour la page sans rechargement complet. Cette approche a permis une navigation fluide et une expérience utilisateur améliorée, tout en gérant efficacement les relations complexes entre les pays."
+			}
+		],
+		"date": "2022-06-01",
+    "inProgress": true
+  },
+  {
+    "id": 7,
+    "title": "Homemade",
+    "image": "homemade",
+    "size": "small",
+    "color": "primary",
+    "url": "",
+    "github": "https://github.com/iSteveB/homemade",
+    "description": "Homemade est un projet personnel innovant visant à créer un réseau social dédié au partage de recettes de cuisine. Cette plateforme permettra aux passionnés de cuisine de partager leurs créations culinaires, d'interagir avec d'autres utilisateurs à travers des commentaires, des likes et des partages, le tout dans un environnement convivial inspiré du format de Twitter. Actuellement en phase initiale de développement, le projet utilise une stack technique moderne et robuste pour assurer une expérience utilisateur fluide et performante.",
+    "stack": ["nextjs", "tailwind", "nestjs", "prisma", "postgresql", "typescript", "aws", "jest"],
+    "objectives": [
+			"Développer une plateforme de partage de recettes intuitive et engageante",
+			"Créer un feed de recettes dynamique et personnalisé pour chaque utilisateur",
+			"Implémenter des fonctionnalités sociales (likes, commentaires, partages, abonnements)",
+			"Permettre le téléchargement et le stockage sécurisé de photos (et plus tard de vidéos) de recettes",
+			"Assurer une expérience utilisateur fluide et réactive",
+			"Concevoir une architecture backend robuste et évolutive",
+			"Développer une interface utilisateur attrayante et responsive"
+		],
+    "keyFeatures": [
+			"Feed personnalisé de recettes de cuisine",
+			"Partage de recettes avec photos (et plus tard vidéos)",
+			"Système de likes, commentaires et partages sur les recettes",
+			"Fonctionnalité de suivi d'autres utilisateurs",
+			"Recherche de recettes par nom, ingrédients ou catégorie",
+			"Profils utilisateurs personnalisables",
+			"Stockage sécurisé des médias utilisateur via AWS S3",
+			"Interface responsive adaptée à tous les appareils"
+		],
+    "role": "FullStack",
+    "challenges": [
+			{
+				"description": "Un défi majeur est la conception et l'implémentation d'un système de feed personnalisé efficace, capable de gérer un grand nombre d'utilisateurs et de recettes tout en restant performant.",
+				"potentialSolution": "Pour relever ce défi, il faudra mettre en place un système de mise en cache intelligent, utiliser des techniques de pagination et de chargement à la demande, et optimiser les requêtes de base de données. L'utilisation de websockets pour les mises à jour en temps réel pourrait également être envisagée pour améliorer la réactivité du feed. De plus, l'implémentation d'un algorithme de recommandation personnalisé permettra d'afficher du contenu pertinent pour chaque utilisateur, augmentant ainsi l'engagement sur la plateforme."
+			}
+		],
+    "date": "2024-07-01",
+    "inProgress": true
+  },
+  {
+    "id": 8,
+    "title": "ArgentBank",
+    "image": "argentbank",
+    "size": "small",
+    "color": "tertiary",
+    "url": "",
+    "github": "https://github.com/iSteveB/ArgentBank-website",
+    "description": "ArgentBank est une application bancaire en ligne utilisant React et Redux. IL s'agit d'un projet de formation dont l'objectif est de créer une interface utilisateur dynamique et réactive, intégrant le front-end avec le back-end via des appels API REST.",
+    "stack": ["react", "redux", "css3", "swagger"],
+    "objectives": [
+			"Développer une application web React complète et responsive",
+			"Implémenter la gestion de l'état global avec Redux",
+			"Intégrer les appels API pour l'authentification et la gestion des profils utilisateurs",
+			"Concevoir et documenter les endpoints API pour la gestion des transactions",
+			"Appliquer les principes du Green Code pour optimiser les performances et la durabilité"
+		],
+    "keyFeatures": [
+			"Authentification des utilisateurs",
+			"Gestion des profils utilisateurs",
+			"Visualisation des transactions bancaires",
+			"Modification des détails des transactions",
+			"Interface utilisateur responsive"
+		],
+    "role": "Frontend",
+    "challenges": [
+			{
+				"description": "Un défi majeur dans ce projet est la conception des nouveaux endpoints API pour la gestion des transactions. Il faut trouver un équilibre entre la fonctionnalité requise (visualisation des transactions, modification des détails) et la sécurité des données bancaires.",
+				"potentialSolution": "Pour relever ce défi, il sera nécessaire de suivre les meilleures pratiques en matière de sécurité des API, d'implémenter une authentification robuste, et de limiter l'accès aux données sensibles. L'utilisation de Swagger pour documenter l'API aidera à clarifier la structure et les exigences de sécurité pour chaque endpoint."
+			}
+		],
+    "date": "2024-07-12",
+    "inProgress": false
+  },
+  {
+    "id": 9,
+    "title": "Menu Maker",
+    "image": "menu-maker",
+    "size": "small",
+    "color": "secondary",
+    "url": "",
+    "github": "",
+    "description": "Ce projet fictif de formation consistait à planifier et préparer le développement de Menu Maker, une application web pour la création de menus de restaurant. En remplacement du PO, j'ai été chargé de produire un dossier de spécifications techniques complet, incluant une analyse des besoins, une veille technologique, et une planification détaillée du projet. Ce travail a impliqué la rédaction de documents techniques, et la mise en place d'outils de gestion de projet comme Jira, le tout sans coder directement l'application.",
+    "stack": ["jira"],
+    "objectives": [
+			"Produire un dossier de spécifications techniques complet et clair",
+			"Réaliser une veille technologique pertinente pour le projet",
+			"Créer des diagrammes de cas d'utilisation précis",
+			"Mettre en place un système de gestion de projet efficace",
+			"Définir une stratégie de test appropriée",
+			"Préparer un plan de développement réaliste et structuré",
+			"Anticiper les défis techniques potentiels du projet"
+		],
+    "keyFeatures": [
+			"Analyse approfondie des besoins du client",
+			"Veille technologique sur les outils de développement web",
+			"Création de diagrammes de cas d'utilisation",
+			"Élaboration d'un document de spécifications techniques",
+			"Mise en place d'un tableau Kanban pour la gestion de projet",
+			"Planification des sprints de développement avec Jira",
+			"Définition des critères de performance et d'accessibilité"
+		],
+    "role": "Gestion de projet",
+    "challenges": [
+			{
+				"description": "L'un des principaux défis a été de traduire les besoins du client en user stories et spécifications techniques précises, tout en les intégrant efficacement dans Jira pour faciliter la gestion du projet.",
+				"potentialSolution": "Pour surmonter ce défi, j'ai adopté une approche méthodique, en commençant par une analyse approfondie des besoins du client. J'ai ensuite effectué une veille technologique pour identifier les meilleures solutions techniques. J'ai créé des user stories détaillées dans Jira, en m'assurant qu'elles étaient claires et exploitables par l'équipe de développement. Enfin, j'ai rédigé un document de spécifications techniques complet, en m'assurant que chaque aspect du projet était clairement défini et réalisable techniquement. L'utilisation de Jira pour la gestion des user stories, du Kanban et des sprints m'a permis de produire un plan de développement solide, bien documenté et facilement suivable par l'équipe."
+			}
+		],
+		"date": "2024-08-01",
+    "inProgress": true
+  },
+  {
+    "id": 10,
+    "title": "Nina Carducci",
+    "image": "nina-carducci",
+    "size": "small",
+    "color": "tertiary",
+    "url": "https://isteveb.github.io/ninacarducci.github.io/",
+    "github": "https://github.com/iSteveB/ninacarducci.github.io",
+    "description": "Ce projet consistait à optimiser le site web d'une photographe, Nina Carducci, pour améliorer ses performances, son référencement (SEO) et son accessibilité. L'objectif était d'augmenter la visibilité du site sur les moteurs de recherche et d'améliorer l'expérience utilisateur. Le travail comprenait l'analyse du site existant, l'identification des problèmes, l'implémentation des solutions, et la production d'un rapport détaillé sur les optimisations effectuées.",
+    "stack": ["seo", "javascript", "css3", "html5"],
+    "objectives": [
+			"Améliorer les performances du site (score Lighthouse > 90%)",
+			"Optimiser le SEO technique (score Lighthouse > 90%)",
+			"Améliorer l'accessibilité du site (score Lighthouse > 90%, pas d'erreurs WAVE)",
+			"Implémenter le référencement local avec Schema.org",
+			"Ajouter les métadonnées pour les réseaux sociaux",
+			"Produire un rapport d'optimisation détaillé"
+		],
+    "keyFeatures": [
+      "Galerie photo interactive",
+      "Système de réservation en ligne",
+      "Blog intégré",
+      "Optimisation SEO pour la visibilité locale"
+    ],
+    "role": "Développeur Full Stack",
+    "challenges": [
+			{
+				"description": "Un défi majeur dans ce projet était d'équilibrer l'optimisation des performances avec la qualité visuelle du site. En tant que portfolio de photographe, le site nécessitait des images de haute qualité, mais celles-ci ralentissaient considérablement le chargement.",
+				"potentialSolution": "La solution a été de trouver un compromis optimal entre la compression des images et leur qualité visuelle, en utilisant des formats modernes comme WebP et en implémentant des techniques de chargement progressif pour améliorer l'expérience utilisateur sans sacrifier l'impact visuel du portfolio."
+			}
+		],
+		"date": "2024-06-19",
+    "inProgress": false
+  }
 ]
