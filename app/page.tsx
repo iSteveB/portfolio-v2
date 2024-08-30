@@ -26,9 +26,9 @@ export default function Home() {
 						<h1 className='text-5xl text-neutral'>
 							<span>Je suis Steve,</span>
 							<br />
-							<span>
+							<strong>
 								Développeur web <br /> Next.js & NestJS
-							</span>
+							</strong>
 							<br />
 							<div className='mt-4 flex gap-2'>
 								<Tag text='Front-End' />
