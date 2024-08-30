@@ -26,6 +26,17 @@ const config: Config = {
 			backgroundImage: {
 				'hero-picture': "url('/assets/images/hero-picture.png')",
 			},
+			keyframes: {
+        scrollIcon: {
+          '0%': { opacity: '1', top: '29%' },
+          '15%': { opacity: '1', top: '50%' },
+          '50%': { opacity: '0', top: '50%' },
+          '100%': { opacity: '0', top: '29%' },
+        },
+      },
+      animation: {
+        scrollIcon: 'scrollIcon 2s linear infinite',
+      },
 		},
 	},
 	plugins: [],
