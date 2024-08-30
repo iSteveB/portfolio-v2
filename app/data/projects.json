@@ -147,7 +147,7 @@
 		"image": "kasa",
 		"size": "small",
 		"color": "tertiary",
-		"url": "kasa-isteveb.vercel.app",
+		"url": "https://kasa-isteveb.vercel.app",
 		"documents": "",
 		"github": "https://github.com/iSteveB/kasa",
 		"description": "Kasa est une application web de location d'appartements entre particuliers, développée dans le cadre d'une formation pour simuler un projet professionnel. Ce projet front-end utilise React et React Router pour créer une interface utilisateur moderne et réactive, en se basant sur des maquettes Figma et des données simulées.",
