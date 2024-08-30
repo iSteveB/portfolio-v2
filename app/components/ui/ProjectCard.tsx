@@ -10,6 +10,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getPictureURL, getIconURL } from '../../utils/getImageURL';
 import Tooltip from '../ui/Tooltip';
+import Collapse from './Collapse';
+import { ModalFooter } from './animated-modal';
+import ScrollIndicator from './ScrollIndicator';
 
 type ProjectCardProps = {
 	title: string;
@@ -18,11 +21,13 @@ type ProjectCardProps = {
 	image: string;
 	url: string;
 	github: string;
+	documents: string;
 	description: string;
 	stack: string[];
 	objectives: string[];
 	role: string;
-	challenges: { description: string; solution: string }[];
+	challenges: { description: string; resolution: string };
+	keyFeatures: string[];
 	inProgress: boolean;
 };
 
@@ -33,11 +38,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	image,
 	url,
 	github,
+	documents,
 	description,
 	stack,
 	objectives,
 	role,
 	challenges,
+	keyFeatures,
 	inProgress,
 }) => {
 	const sizeClasses: { [key: string]: string } = {
@@ -68,10 +75,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 								width={500}
 								height={100}
 							/>
+							<div className='absolute bottom-2 left-1/2 z-50 -translate-x-1/2'>
+								<ScrollIndicator scrollContainerSelector='.w-full.overflow-scroll.text-neutral' />
+							</div>
 							<div className='absolute right-4 top-4 flex gap-4 text-2xl text-accent-100'>
-								{inProgress && <span className='rounded-full bg-base-700 px-4'>
-									En cours
-								</span>}
+								{inProgress && (
+									<span className='rounded-full bg-base-700 px-4'>
+										En cours
+									</span>
+								)}
 								<span className='rounded-full bg-base-700 px-4'>
 									{role}
 								</span>
@@ -79,7 +91,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 						</div>
 						<div className='flex flex-col gap-2 p-4 text-neutral'>
 							<div className='flex flex-wrap items-center justify-between gap-2'>
-								<h3 className='text-5xl text-accent-100'>{title}</h3>
+								<h3 className='text-6xl text-accent-100'>
+									{title}
+								</h3>
+
 								<div className='flex flex-wrap gap-2'>
 									{stack.map((stackItem) => (
 										<Tooltip
@@ -98,18 +113,70 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 							</div>
 						</div>
 						<p className='p-4 text-2xl'>{description}</p>
-            <ul className='flex list-disc flex-col gap-1 p-4 marker:text-accent-100'>
-              <h4 className='text-2xl'>Objectifs</h4>
-              {objectives.map((objective) => (
-                <li
-                  key={objective}
-                  className='ml-4 text-lg'
-                >
-                  {objective}
-                </li>
-              ))}
-            </ul>
+						<Collapse title='Objectifs'>
+							<ul className='flex list-disc flex-col gap-1 p-4 marker:text-accent-100'>
+								{objectives.map((objective) => (
+									<li
+										key={objective}
+										className='ml-4 text-lg'>
+										{objective}
+									</li>
+								))}
+							</ul>
+						</Collapse>
+						<Collapse
+							title='Points clés'
+							className='border-t-2 border-base-850'>
+							<ul className='flex list-disc flex-col gap-1 p-4 marker:text-accent-100'>
+								{keyFeatures.map((keyFeature) => (
+									<li
+										key={keyFeature}
+										className='ml-4 text-lg'>
+										{keyFeature}
+									</li>
+								))}
+							</ul>
+						</Collapse>
+						<Collapse
+							title='Challenges'
+							className='border-t-2 border-base-850'>
+							<div className='ml-4 text-lg'>
+								<h5 className='text-xl text-accent-100'>
+									Problème
+								</h5>
+								<p className='px-4'>{challenges.description}</p>
+							</div>
+							<div className='ml-4 text-lg'>
+								<h5 className='text-xl text-accent-100'>
+									Solution
+								</h5>
+								<p className='px-4'>{challenges.resolution}</p>
+							</div>
+						</Collapse>
 					</ModalContent>
+					<ModalFooter className='flex w-full justify-between bg-accent-100 text-center text-2xl text-base-800'>
+						{url && (
+							<Link className='w-full' href={url} target='_blank'>
+								Visiter le site
+							</Link>
+						)}
+						{github && (
+							<Link
+								className='w-full'
+								href={github}
+								target='_blank'>
+								Voir le code
+							</Link>
+						)}
+						{documents && (
+							<Link
+								className='w-full'
+								href={documents}
+								target='_blank'>
+								Consulter les documents
+							</Link>
+						)}
+					</ModalFooter>
 				</ModalBody>
 			</Modal>
 		</div>
