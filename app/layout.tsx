@@ -21,6 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang='fr'>
 			<body className={athiti.className}>
+				<div className='bg-red-600 p-4 text-center text-xl font-bold text-neutral'>🚧 Développement en cours 🚧</div>
 				<Header />
 				<Navigation />
 				{children}
