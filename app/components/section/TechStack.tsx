@@ -1,4 +1,7 @@
+'use client'
 import Collapse from '../ui/Collapse';
+import Tooltip from '../ui/Tooltip';
+import Image from 'next/image';
 import reactIcon from '../../../public/icons/react.svg';
 import nodeIcon from '../../../public/icons/nodejs.svg';
 import expressIcon from '../../../public/icons/express.svg';
@@ -51,26 +54,52 @@ const TechStack = () => {
     { name: 'Postman', icon: postmanIcon },
 	];
 
-	return (
-		<div className='flex flex-col flex-wrap gap-4 py-20'>
-			<div className='flex flex-col gap-4 lg:w-full lg:flex-row'>
-				<div className='w-full'>
-					<Collapse title='Frontend' stackItems={frontendStack} />
-				</div>
-				<div className='w-full'>
-					<Collapse title='Backend' stackItems={backendStack} />
-				</div>
-			</div>
-			<div className='flex flex-col gap-4 lg:w-full lg:flex-row'>
-				<div className='w-full'>
-					<Collapse title='Database' stackItems={databaseStack} />
-				</div>
-				<div className='w-full'>
-					<Collapse title='Outils' stackItems={toolsStack} />
-				</div>
-			</div>
-		</div>
-	);
+	const renderStackItems = (stackItems: { name: string; icon: string }[]) => (
+    <ul className='flex flex-wrap gap-5 p-5'>
+      {stackItems.map((item, index) => (
+        <li className='flex flex-col items-center text-center' key={index}>
+          <Tooltip tooltip={item.name}>
+            <Image
+              src={item.icon}
+              alt={item.name}
+              width={100}
+              height={100}
+              className='mb-2 rounded-full bg-base-800 object-contain p-2'
+            />
+          </Tooltip>
+        </li>
+      ))}
+    </ul>
+  );
+
+  return (
+    <div className='flex flex-col flex-wrap gap-4 py-20'>
+      <div className='flex flex-col gap-4 lg:w-full lg:flex-row'>
+        <div className='w-full'>
+          <Collapse title='Frontend'>
+            {renderStackItems(frontendStack)}
+          </Collapse>
+        </div>
+        <div className='w-full'>
+          <Collapse title='Backend'>
+            {renderStackItems(backendStack)}
+          </Collapse>
+        </div>
+      </div>
+      <div className='flex flex-col gap-4 lg:w-full lg:flex-row'>
+        <div className='w-full'>
+          <Collapse title='Database'>
+            {renderStackItems(databaseStack)}
+          </Collapse>
+        </div>
+        <div className='w-full'>
+          <Collapse title='Outils'>
+            {renderStackItems(toolsStack)}
+          </Collapse>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default TechStack;
