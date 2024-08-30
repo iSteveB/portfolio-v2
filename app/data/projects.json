@@ -6,6 +6,7 @@
 		"size": "small",
 		"color": "tertiary",
 		"url": "",
+		"documents": "",
 		"github": "https://github.com/iSteveB/Debuggez-une-application-React.JS",
 		"description": "724 events est un projet de débogage et finalisation d'un site web one-page pour une agence événementielle. Le site existant présentait des bugs qui entravaient son bon fonctionnement. L'objectif était d'identifier ces problèmes à l'aide d'outils comme Chrome DevTools et React Developer Tools, puis de les résoudre en utilisant JavaScript et React. Le projet impliquait également la complétion d'un cahier de recette pour assurer la qualité du site à travers des tests unitaires et fonctionnels.",
 		"stack": ["javascript", "react", "jest"],
@@ -37,6 +38,7 @@
 		"size": "large",
 		"color": "primary",
 		"url": "https://yummynouilles.com",
+		"documents": "",
 		"github": "yummynouilles",
 		"description": "OhMyFood est un site web mobile-first créé pour une start-up de restauration. Le site répertorie les menus de restaurants gastronomiques et permet aux clients de composer leur repas à l'avance.",
 		"stack": ["sass", "html5"],
@@ -68,6 +70,7 @@
 		"size": "small",
 		"color": "secondary",
 		"url": "",
+		"documents": "",
 		"github": "https://github.com/iSteveB/ManyScan",
 		"description": "ManyScan est une application web de lecture de mangas en ligne développée en collaboration avec un collègue de formation et une web designeuse. ManyScan offre une expérience de lecture fluide et personnalisable. L'application s'appuie sur l'API MangaDex pour fournir un large catalogue de mangas, avec des fonctionnalités avancées telles que la lecture horizontale ou verticale, la gestion des favoris, et une interface utilisateur soignée.",
 		"stack": [
@@ -110,6 +113,7 @@
 		"size": "large",
 		"color": "secondary",
 		"url": "https://www.alstudiophotos.com/",
+		"documents": "",
 		"github": "https://github.com/iSteveB/alstudio",
 		"description": "AL Studio est un portfolio développé pour une photographe professionnelle. Ce site web moderne et élégant met en valeur le travail de l'artiste à travers une galerie interactive, des informations tarifaires claires, et un formulaire de contact intégré. AL Studio offre une expérience utilisateur fluide et visuellement attrayante, optimisée pour les performances et le référencement.",
 		"stack": ["nextjs", "tailwind", "sanity", "typescript", "figma", "seo"],
@@ -144,6 +148,7 @@
 		"size": "small",
 		"color": "tertiary",
 		"url": "kasa-isteveb.vercel.app",
+		"documents": "",
 		"github": "https://github.com/iSteveB/kasa",
 		"description": "Kasa est une application web de location d'appartements entre particuliers, développée dans le cadre d'une formation pour simuler un projet professionnel. Ce projet front-end utilise React et React Router pour créer une interface utilisateur moderne et réactive, en se basant sur des maquettes Figma et des données simulées.",
 		"stack": ["react", "sass", "figma"],
@@ -179,6 +184,7 @@
 		"size": "small",
 		"color": "primary",
 		"url": "https://world-map-v01.vercel.app/",
+		"documents": "",
 		"github": "https://github.com/iSteveB/World-map",
 		"description": "Where In The World est une application éducative interactive qui permet aux utilisateurs d'explorer et d'apprendre sur les pays du monde entier. Développée dans le cadre d'un défi Frontend Mentor, cette application utilise React et React Router pour créer une interface dynamique et responsive. Un quizz géographie est en cours de développement pour rendre l'apprentissage plus engageant et amusant.",
 		"stack": ["react", "sass"],
@@ -201,12 +207,10 @@
 			"Mode sombre/clair basculable"
 		],
 		"role": "Frontend",
-		"challenges": 
-			{
-				"description": "L'un des principaux défis était la création de pages dynamiques pour chaque pays et l'intégration fluide des liens vers les pays frontaliers.",
-				"resolution": "Pour relever ce défi, j'ai utilisé React Router pour générer des routes dynamiques pour chaque pays. J'ai créé un composant de page de détails réutilisable qui se remplit avec les données du pays sélectionné. Pour les pays frontaliers, j'ai implémenté un système de chargement à la demande. Lorsqu'un utilisateur clique sur un pays frontalier, l'application récupère les données nécessaires et met à jour la page sans rechargement complet. Cette approche a permis une navigation fluide et une expérience utilisateur améliorée, tout en gérant efficacement les relations complexes entre les pays."
-			}
-		,
+		"challenges": {
+			"description": "L'un des principaux défis était la création de pages dynamiques pour chaque pays et l'intégration fluide des liens vers les pays frontaliers.",
+			"resolution": "Pour relever ce défi, j'ai utilisé React Router pour générer des routes dynamiques pour chaque pays. J'ai créé un composant de page de détails réutilisable qui se remplit avec les données du pays sélectionné. Pour les pays frontaliers, j'ai implémenté un système de chargement à la demande. Lorsqu'un utilisateur clique sur un pays frontalier, l'application récupère les données nécessaires et met à jour la page sans rechargement complet. Cette approche a permis une navigation fluide et une expérience utilisateur améliorée, tout en gérant efficacement les relations complexes entre les pays."
+		},
 		"date": "2022-06-01",
 		"inProgress": true
 	},
@@ -217,6 +221,7 @@
 		"size": "small",
 		"color": "primary",
 		"url": "",
+		"documents": "",
 		"github": "https://github.com/iSteveB/homemade",
 		"description": "Homemade est un projet personnel visant à créer un réseau social dédié au partage de recettes de cuisine. Cette plateforme permettra aux passionnés de cuisine de partager leurs créations culinaires, d'interagir avec d'autres utilisateurs à travers des commentaires, des likes et des partages, le tout dans un environnement convivial inspiré du format de Twitter. Actuellement en phase initiale de développement, le projet utilise une stack technique moderne et robuste pour assurer une expérience utilisateur fluide et performante.",
 		"stack": [
@@ -249,12 +254,10 @@
 			"Interface responsive adaptée à tous les appareils"
 		],
 		"role": "FullStack",
-		"challenges": 
-			{
-				"description": "Un défi majeur est la conception et l'implémentation d'un système de feed personnalisé efficace, capable de gérer un grand nombre d'utilisateurs et de recettes tout en restant performant.",
-				"resolution": "Pour relever ce défi, il faudra mettre en place un système de mise en cache intelligent, utiliser des techniques de pagination et de chargement à la demande, et optimiser les requêtes de base de données. L'utilisation de websockets pour les mises à jour en temps réel pourrait également être envisagée pour améliorer la réactivité du feed. De plus, l'implémentation d'un algorithme de recommandation personnalisé permettra d'afficher du contenu pertinent pour chaque utilisateur, augmentant ainsi l'engagement sur la plateforme."
-			}
-		,
+		"challenges": {
+			"description": "Un défi majeur est la conception et l'implémentation d'un système de feed personnalisé efficace, capable de gérer un grand nombre d'utilisateurs et de recettes tout en restant performant.",
+			"resolution": "Pour relever ce défi, il faudra mettre en place un système de mise en cache intelligent, utiliser des techniques de pagination et de chargement à la demande, et optimiser les requêtes de base de données. L'utilisation de websockets pour les mises à jour en temps réel pourrait également être envisagée pour améliorer la réactivité du feed. De plus, l'implémentation d'un algorithme de recommandation personnalisé permettra d'afficher du contenu pertinent pour chaque utilisateur, augmentant ainsi l'engagement sur la plateforme."
+		},
 		"date": "2024-07-01",
 		"inProgress": true
 	},
@@ -265,6 +268,7 @@
 		"size": "small",
 		"color": "tertiary",
 		"url": "",
+		"documents": "",
 		"github": "https://github.com/iSteveB/ArgentBank-website",
 		"description": "ArgentBank est une application bancaire en ligne utilisant React et Redux. IL s'agit d'un projet de formation dont l'objectif est de créer une interface utilisateur dynamique et réactive, intégrant le front-end avec le back-end via des appels API REST.",
 		"stack": ["react", "redux", "css3", "swagger"],
@@ -283,12 +287,10 @@
 			"Interface utilisateur responsive"
 		],
 		"role": "Frontend",
-		"challenges": 
-			{
-				"description": "Un défi majeur dans ce projet est la conception des nouveaux endpoints API pour la gestion des transactions. Il faut trouver un équilibre entre la fonctionnalité requise (visualisation des transactions, modification des détails) et la sécurité des données bancaires.",
-				"resolution": "Pour relever ce défi, il sera nécessaire de suivre les meilleures pratiques en matière de sécurité des API, d'implémenter une authentification robuste, et de limiter l'accès aux données sensibles. L'utilisation de Swagger pour documenter l'API aidera à clarifier la structure et les exigences de sécurité pour chaque endpoint."
-			}
-		,
+		"challenges": {
+			"description": "Un défi majeur dans ce projet est la conception des nouveaux endpoints API pour la gestion des transactions. Il faut trouver un équilibre entre la fonctionnalité requise (visualisation des transactions, modification des détails) et la sécurité des données bancaires.",
+			"resolution": "Pour relever ce défi, il sera nécessaire de suivre les meilleures pratiques en matière de sécurité des API, d'implémenter une authentification robuste, et de limiter l'accès aux données sensibles. L'utilisation de Swagger pour documenter l'API aidera à clarifier la structure et les exigences de sécurité pour chaque endpoint."
+		},
 		"date": "2024-07-12",
 		"inProgress": false
 	},
@@ -299,6 +301,7 @@
 		"size": "small",
 		"color": "secondary",
 		"url": "",
+		"documents": "",
 		"github": "",
 		"description": "Ce projet fictif de formation consistait à planifier et préparer le développement de Menu Maker, une application web pour la création de menus de restaurant. En remplacement du PO, j'ai été chargé de produire un dossier de spécifications techniques complet, incluant une analyse des besoins, une veille technologique, et une planification détaillée du projet. Ce travail a impliqué la rédaction de documents techniques, et la mise en place d'outils de gestion de projet comme Jira, le tout sans coder directement l'application.",
 		"stack": ["jira"],
@@ -321,12 +324,10 @@
 			"Définition des critères de performance et d'accessibilité"
 		],
 		"role": "Gestion de projet",
-		"challenges": 
-			{
-				"description": "L'un des principaux défis a été de traduire les besoins du client en user stories et spécifications techniques précises, tout en les intégrant efficacement dans Jira pour faciliter la gestion du projet.",
-				"resolution": "Pour surmonter ce défi, j'ai adopté une approche méthodique, en commençant par une analyse approfondie des besoins du client. J'ai ensuite effectué une veille technologique pour identifier les meilleures solutions techniques. J'ai créé des user stories détaillées dans Jira, en m'assurant qu'elles étaient claires et exploitables par l'équipe de développement. Enfin, j'ai rédigé un document de spécifications techniques complet, en m'assurant que chaque aspect du projet était clairement défini et réalisable techniquement. L'utilisation de Jira pour la gestion des user stories, du Kanban et des sprints m'a permis de produire un plan de développement solide, bien documenté et facilement suivable par l'équipe."
-			}
-		,
+		"challenges": {
+			"description": "L'un des principaux défis a été de traduire les besoins du client en user stories et spécifications techniques précises, tout en les intégrant efficacement dans Jira pour faciliter la gestion du projet.",
+			"resolution": "Pour surmonter ce défi, j'ai adopté une approche méthodique, en commençant par une analyse approfondie des besoins du client. J'ai ensuite effectué une veille technologique pour identifier les meilleures solutions techniques. J'ai créé des user stories détaillées dans Jira, en m'assurant qu'elles étaient claires et exploitables par l'équipe de développement. Enfin, j'ai rédigé un document de spécifications techniques complet, en m'assurant que chaque aspect du projet était clairement défini et réalisable techniquement. L'utilisation de Jira pour la gestion des user stories, du Kanban et des sprints m'a permis de produire un plan de développement solide, bien documenté et facilement suivable par l'équipe."
+		},
 		"date": "2024-08-01",
 		"inProgress": false
 	},
@@ -337,6 +338,7 @@
 		"size": "small",
 		"color": "tertiary",
 		"url": "https://isteveb.github.io/ninacarducci.github.io/",
+		"documents": "",
 		"github": "https://github.com/iSteveB/ninacarducci.github.io",
 		"description": "Ce projet consistait à optimiser le site web d'une photographe, Nina Carducci, pour améliorer ses performances, son référencement (SEO) et son accessibilité. L'objectif était d'augmenter la visibilité du site sur les moteurs de recherche et d'améliorer l'expérience utilisateur. Le travail comprenait l'analyse du site existant, l'identification des problèmes, l'implémentation des solutions, et la production d'un rapport détaillé sur les optimisations effectuées.",
 		"stack": ["seo", "javascript", "css3", "html5"],
@@ -355,12 +357,10 @@
 			"Optimisation SEO pour la visibilité locale"
 		],
 		"role": "Développeur Full Stack",
-		"challenges":
-			{
-				"description": "Un défi majeur dans ce projet était d'équilibrer l'optimisation des performances avec la qualité visuelle du site. En tant que portfolio de photographe, le site nécessitait des images de haute qualité, mais celles-ci ralentissaient considérablement le chargement.",
-				"resolution": "La solution a été de trouver un compromis optimal entre la compression des images et leur qualité visuelle, en utilisant des formats modernes comme WebP et en implémentant des techniques de chargement progressif pour améliorer l'expérience utilisateur sans sacrifier l'impact visuel du portfolio."
-			}
-		,
+		"challenges": {
+			"description": "Un défi majeur dans ce projet était d'équilibrer l'optimisation des performances avec la qualité visuelle du site. En tant que portfolio de photographe, le site nécessitait des images de haute qualité, mais celles-ci ralentissaient considérablement le chargement.",
+			"resolution": "La solution a été de trouver un compromis optimal entre la compression des images et leur qualité visuelle, en utilisant des formats modernes comme WebP et en implémentant des techniques de chargement progressif pour améliorer l'expérience utilisateur sans sacrifier l'impact visuel du portfolio."
+		},
 		"date": "2024-06-19",
 		"inProgress": false
 	}
