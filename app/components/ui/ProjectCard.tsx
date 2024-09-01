@@ -154,15 +154,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 							</div>
 						</Collapse>
 					</ModalContent>
-					<ModalFooter className='flex w-full justify-between bg-accent-100 text-center text-2xl text-base-800'>
+					<ModalFooter className='flex w-full items-center justify-between bg-base-800 text-center text-2xl text-base-800'>
 						{url && (
-							<Link className='w-full' href={url} target='_blank'>
+							<Link className='size-full bg-accent-100 p-3' href={url} target='_blank'>
 								Visiter le site
 							</Link>
 						)}
 						{github && (
 							<Link
-								className='w-full'
+								className='size-full bg-accent-100 p-3'
 								href={github}
 								target='_blank'>
 								Voir le code
@@ -170,7 +170,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 						)}
 						{documents && (
 							<Link
-								className='w-full'
+								className='size-full bg-accent-100 p-3'
 								href={documents}
 								target='_blank'>
 								Consulter les documents
