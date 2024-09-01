@@ -15,7 +15,7 @@ const petrona = Petrona({ subsets: ['latin'], weight: '400' });
 export default function Home() {
 	return (
 		<main>
-			<Section color='light' css='overflow-hidden'>
+			<Section id="hero" color='light' css='overflow-hidden'>
 				<div className='flex items-center justify-center gap-52'>
 					<div className={petrona.className + 'flex flex-col gap-10'}>
 						<div>
@@ -49,7 +49,7 @@ export default function Home() {
 					</div>
 				</div>
 			</Section>
-			<Section color='dark'>
+			<Section id="about" color='dark'>
 				<div className='flex items-center justify-center gap-8 py-20'>
 					<div className='flex w-1/2 flex-col gap-6'>
 						<Card
@@ -140,7 +140,7 @@ export default function Home() {
 				</div>
 			</Section>
 
-			<Section color='light'>
+			<Section id="portfolio" color='light'>
 				<TechStack />
 			</Section>
 

@@ -4,24 +4,25 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 type ButtonProps = {
-	text: string;
-	icon: JSX.Element;
-	link?: string;
-	email?: string;
-	direction?: 'left' | 'right';
-
-	onClick?: () => void;
+  text: string;
+  icon: JSX.Element;
+  link?: string;
+  email?: string;
+  direction?: 'left' | 'right';
+  isInternalLink?: boolean;
+  onClick?: () => void;
 };
 
 const Button = ({
-	text,
-	icon,
-	direction = 'left',
-	link = '/',
-	email,
-	onClick,
+  text,
+  icon,
+  direction = 'left',
+  link = '/',
+  email,
+  isInternalLink = false,
+  onClick,
 }: ButtonProps) => {
-	const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false);
 
 	const animationDirection = {
 		left: {
@@ -43,24 +44,44 @@ const Button = ({
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
       });
+    } else if (isInternalLink && link.startsWith('#')) {
+      e.preventDefault();
+      const element = document.querySelector(link);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     if (onClick) {
       onClick();
     }
   };
 
-	return (
-		<motion.div className={animationDirection[direction].parent}>
-			<span className={animationDirection[direction].text}>{copied ? "Copié !" : text}</span>
-			<Link
-				href={link}
-				className={animationDirection[direction].icon}
-				onClick={handleClick}
-				aria-label={text}>
-				{icon}
-			</Link>
-		</motion.div>
-	);
+  return (
+    <motion.div className={animationDirection[direction].parent}>
+      <span className={animationDirection[direction].text}>{copied ? "Copié !" : text}</span>
+      {isInternalLink ? (
+        <a
+          href={link}
+          className={animationDirection[direction].icon}
+          onClick={handleClick}
+          aria-label={text}
+        >
+          {icon}
+        </a>
+      ) : (
+        <Link
+          href={link}
+          className={animationDirection[direction].icon}
+          onClick={handleClick}
+          aria-label={text}
+          target={!isInternalLink && link !== '/' ? '_blank' : undefined}
+          rel={!isInternalLink && link !== '/' ? 'noopener noreferrer' : undefined}
+        >
+          {icon}
+        </Link>
+      )}
+    </motion.div>
+  );
 };
 
 export default Button;
