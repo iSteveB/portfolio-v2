@@ -9,7 +9,7 @@ import GitHubIcon from '../icon/GitHubIcon';
 
 const Header = () => {
 	return (
-		<header className='flex w-full justify-between bg-base-900 px-6 py-4'>
+		<header className='flex w-full max-w-screen-2xl justify-between bg-base-900 px-6 py-4'>
 			<Logo />
 			<div className='flex gap-4'>
 				<Button

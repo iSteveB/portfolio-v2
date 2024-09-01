@@ -10,7 +10,7 @@ import WorkIcon from '../icon/WorkIcon';
 
 const Navigation = () => {
   return (
-    <motion.nav className='fixed left-6 top-1/2 flex -translate-y-1/2 flex-col justify-center gap-3 rounded-lg bg-base-800 px-4 py-6'>
+    <motion.nav className='sticky top-1/2 z-50 ml-6 flex -translate-y-1/2 flex-col justify-center gap-3 rounded-lg bg-base-800 px-4 py-6'>
       <Button text='Accueil' link='#hero' icon={<HomeIcon />} isInternalLink={true} />
       <Button text='À propos' link='#about' icon={<UserIcon />} isInternalLink={true} />
       <Button text='Portfolio' link='#portfolio' icon={<WorkIcon />} isInternalLink={true} />

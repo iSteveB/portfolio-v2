@@ -48,8 +48,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	inProgress,
 }) => {
 	const sizeClasses: { [key: string]: string } = {
-		small: 'col-span-1 row-span-1 text-5xl',
-		large: 'col-span-2 row-span-1 text-7xl',
+		small: 'lg:col-span-1 lg:row-span-1 text-5xl',
+		large: 'lg:col-span-2 lg:row-span-1 text-7xl',
 	};
 
 	const colorClasses: { [key: string]: string } = {
@@ -62,7 +62,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 	return (
 		<div
-			className={`flex cursor-pointer items-center justify-center rounded-lg ${sizeClasses[size]} ${colorClasses[color]}`}>
+			className={`flex cursor-pointer items-center justify-center rounded-lg p-8 ${sizeClasses[size]} ${colorClasses[color]}`}>
 			<Modal>
 				<ModalTrigger className='size-full'>{title}</ModalTrigger>
 				<ModalBody className='flex size-full items-center bg-base-700'>
@@ -156,7 +156,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					</ModalContent>
 					<ModalFooter className='flex w-full items-center justify-between bg-base-800 text-center text-2xl text-base-800'>
 						{url && (
-							<Link className='size-full bg-accent-100 p-3' href={url} target='_blank'>
+							<Link
+								className='size-full bg-accent-100 p-3'
+								href={url}
+								target='_blank'>
 								Visiter le site
 							</Link>
 						)}

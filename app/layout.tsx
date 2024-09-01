@@ -3,7 +3,6 @@ import { Athiti } from 'next/font/google';
 import './globals.css';
 
 import Header from './components/layout/Header';
-import Navigation from './components/layout/Navigation';
 
 const athiti = Athiti({ subsets: ['latin'], weight: '400' });
 
@@ -20,10 +19,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='fr'>
-			<body className={athiti.className}>
-				<div className='bg-red-600 p-4 text-center text-xl font-bold text-neutral'>🚧 Développement en cours 🚧</div>
+			<body className={`${athiti.className} flex flex-col items-center bg-base-900`}>
+				<div className='w-full bg-red-600 p-4 text-center text-xl font-bold text-neutral'>🚧 Développement en cours 🚧</div>
 				<Header />
-				<Navigation />
 				{children}
 			</body>
 		</html>
