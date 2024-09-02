@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className='flex w-full max-w-screen-2xl flex-col items-center justify-center gap-3 bg-base-900 p-4'>
       <div className='flex gap-4'>
       <Button
-					text='Copier mon mail'
+					text='Mon e-mail'
 					icon={<MailIcon />}
 					direction='right'
 					email='contact@stevebasse.fr'

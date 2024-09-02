@@ -27,25 +27,25 @@ const Button = ({
 	const animationDirection = {
 		left: {
 			icon: 'absolute left-0 rounded-full bg-accent-100 p-3',
-			text: 'overflow-hidden whitespace-nowrap pl-10 text-neutral group-hover:overflow-visible',
-			parent: 'group relative flex size-12 items-center justify-around overflow-hidden rounded-3xl border-e-2 border-accent-100 pl-2 transition-all duration-300 ease-in-out hover:w-48',
+			text: 'overflow-hidden whitespace-nowrap p-14 text-neutral group-hover:overflow-visible',
+			parent: 'group relative flex size-12 items-center justify-around overflow-hidden rounded-3xl border-e-2 border-accent-100 pl-2 transition-all duration-300 ease-in-out hover:w-40',
 		},
 		right: {
 			icon: 'absolute right-0 rounded-full bg-accent-100 p-3',
-			text: 'overflow-hidden whitespace-nowrap pr-10 text-neutral group-hover:overflow-visible',
-			parent: 'group relative flex size-12 items-center justify-around overflow-hidden rounded-3xl border-s-2 border-accent-100 pl-2 transition-all duration-300 ease-in-out hover:w-48',
+			text: 'overflow-hidden whitespace-nowrap p-4 text-neutral group-hover:overflow-visible',
+			parent: 'group relative flex size-12 items-center overflow-hidden rounded-3xl border-s-2 border-accent-100 pl-2 transition-all duration-300 ease-in-out hover:w-40',
 		},
 	};
 
-	const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+	const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (email) {
-      e.preventDefault();
+      event.preventDefault();
       navigator.clipboard.writeText(email).then(() => {
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
       });
     } else if (isInternalLink && link.startsWith('#')) {
-      e.preventDefault();
+      event.preventDefault();
       const element = document.querySelector(link);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -56,28 +56,34 @@ const Button = ({
     }
   };
 
+  const ButtonContent = () => (
+    <>
+      <span className={animationDirection[direction].text}>{copied ? "C'est copié !" : text}</span>
+      <span className={animationDirection[direction].icon}>{icon}</span>
+    </>
+  );
+
   return (
     <motion.div className={animationDirection[direction].parent}>
-      <span className={animationDirection[direction].text}>{copied ? "Copié !" : text}</span>
       {isInternalLink ? (
         <a
           href={link}
-          className={animationDirection[direction].icon}
+          className="flex size-full items-center justify-between"
           onClick={handleClick}
           aria-label={text}
         >
-          {icon}
+          <ButtonContent />
         </a>
       ) : (
         <Link
           href={link}
-          className={animationDirection[direction].icon}
+          className="flex size-full items-center justify-between"
           onClick={handleClick}
           aria-label={text}
           target={!isInternalLink && link !== '/' ? '_blank' : undefined}
           rel={!isInternalLink && link !== '/' ? 'noopener noreferrer' : undefined}
         >
-          {icon}
+          <ButtonContent />
         </Link>
       )}
     </motion.div>

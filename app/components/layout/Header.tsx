@@ -13,7 +13,7 @@ const Header = () => {
 			<Logo />
 			<div className='flex gap-4'>
 				<Button
-					text='Copier mon mail'
+					text='Mon e-mail'
 					icon={<MailIcon />}
 					direction='right'
 					email='contact@stevebasse.fr'

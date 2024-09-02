@@ -14,7 +14,7 @@ const Navigation = () => {
       <Button text='Accueil' link='#hero' icon={<HomeIcon />} isInternalLink={true} />
       <Button text='À propos' link='#about' icon={<UserIcon />} isInternalLink={true} />
       <Button text='Portfolio' link='#portfolio' icon={<WorkIcon />} isInternalLink={true} />
-      <Button text='Copier mon mail' icon={<MailIcon />} email='contact@stevebasse.fr' />
+      <Button text='Mon e-mail' icon={<MailIcon />} email='contact@stevebasse.fr' />
     </motion.nav>
   );
 };
