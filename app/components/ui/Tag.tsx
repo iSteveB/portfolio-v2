@@ -6,7 +6,7 @@ type TagProps = {
 
 const Tag = ({text}: TagProps) => {
   return (
-    <span className='rounded-sm bg-accent-100 px-3 py-1 text-sm text-base-900'>
+    <span className='rounded-sm bg-accent-100 px-3 py-1 text-xl text-base-900'>
       {text}
     </span>
   );

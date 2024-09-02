@@ -8,8 +8,8 @@ type SectionProps = {
 };
 const Section: React.FC<SectionProps> = ({ children, color, css, id }) => {
 	const bgColor = {
-		light: 'px-32 w-full bg-base-700',
-		dark: 'px-32 w-full bg-base-850',
+		light: 'lg:px-32 w-full bg-base-700',
+		dark: 'lg:px-32 w-full bg-base-850',
 	};
 	return <section id={id} className={`${bgColor[color]} ${css}`}>{children}</section>;
 };

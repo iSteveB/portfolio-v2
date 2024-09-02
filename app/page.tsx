@@ -20,41 +20,37 @@ export default function Home() {
 				<div className='absolute left-0 top-0 h-full'>
 					<Navigation />
 				</div>
-				<Section id='hero' color='light' css='overflow-hidden'>
-					<div className='flex items-center justify-center gap-52'>
+				<Section id='hero' color='light' css='lg:overflow-hidden'>
+					<div className='flex flex-col-reverse items-center justify-center lg:flex-row lg:gap-52'>
 						<div
-							className={
-								petrona.className + 'flex flex-col gap-10'
-							}>
+							className={`${petrona.className} mb-16 flex flex-col items-center justify-center gap-6 text-center lg:mb-0 lg:items-start lg:justify-start lg:text-start`}>
 							<div>
-								<span className='mb-2 inline-block rounded-md bg-accent-100 px-2 text-3xl'>
+								<span className='mb-2 inline-block rounded-md bg-accent-100 px-2 text-4xl'>
 									Hello !
 								</span>
 							</div>
-							<h1 className='text-5xl text-neutral'>
-								<span>Je suis Steve,</span>
-								<br />
+							<h1 className='text-5xl text-neutral lg:max-w-96'>
+								<span>Je suis Steve, </span>
 								<strong>
 									Développeur web <br /> Next.js & NestJS
 								</strong>
-								<br />
-								<div className='mt-4 flex gap-2'>
-									<Tag text='Front-End' />
-									<Tag text='Full-Stack' />
-								</div>
 							</h1>
+							<div className='mt-4 flex gap-2'>
+								<Tag text='Front-End' />
+								<Tag text='Full-Stack' />
+							</div>
 						</div>
-						<div className='relative flex w-1/3'>
+						<div className='relative flex lg:w-1/3'>
 							<div>
 								<Particles />
 							</div>
 							<Image
 								src={HeroPicture}
 								alt='Steve Basse'
-								className='z-20'
+								className='z-20 my-10 max-w-96 rounded-full bg-base-850 lg:my-0 lg:rounded-none lg:bg-transparent'
 								priority
 							/>
-							<div className='absolute -left-32 top-20 z-10 size-[600px] rounded-full bg-base-800 shadow-xl'></div>
+							<div className='absolute -left-32 top-20 z-10 hidden size-[600px] rounded-full bg-base-800 shadow-xl lg:block'></div>
 						</div>
 					</div>
 				</Section>
