@@ -51,7 +51,7 @@ const Header = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className='absolute right-0 z-10 mt-2 w-auto rounded-md bg-base-800 py-1 shadow-lg'>
+            <div className='absolute right-0 z-50 mt-2 w-auto rounded-md bg-base-800 py-1 shadow-lg'>
               {buttons.map((button, index) => (
                 <div key={index} className='px-4 py-2'>
                   <Button
