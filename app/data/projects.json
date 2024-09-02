@@ -349,7 +349,7 @@
 			"Blog intégré",
 			"Optimisation SEO pour la visibilité locale"
 		],
-		"role": "Développeur Full Stack",
+		"role": "Frontend - SEO",
 		"challenges": {
 			"description": "Un point important dans ce projet était d'équilibrer l'optimisation des performances avec la qualité visuelle du site. En tant que portfolio de photographe, le site nécessitait des images de haute qualité, mais celles-ci ralentissaient considérablement le chargement.",
 			"resolution": "La solution a été de trouver un compromis optimal entre la compression des images et leur qualité visuelle, en utilisant des formats modernes comme WebP et en implémentant des techniques de chargement progressif pour améliorer l'expérience utilisateur sans sacrifier l'impact visuel du portfolio."
