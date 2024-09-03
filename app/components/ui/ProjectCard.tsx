@@ -48,8 +48,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	inProgress,
 }) => {
 	const sizeClasses: { [key: string]: string } = {
-		small: 'lg:col-span-1 lg:row-span-1 text-5xl',
-		large: 'lg:col-span-2 lg:row-span-1 text-7xl',
+		small: 'col-span-1 row-auto lg:col-span-1 lg:row-span-1 text-5xl',
+		large: 'col-span-1 row-auto lg:col-span-2 lg:row-span-1 text-7xl',
 	};
 
 	const colorClasses: { [key: string]: string } = {

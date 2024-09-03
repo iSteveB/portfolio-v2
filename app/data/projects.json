@@ -8,7 +8,7 @@
 		"url": "",
 		"documents": "https://drive.google.com/drive/folders/1ZRAUBHlWFk5Acntl11UKZF3E9NPKGHxb?usp=sharing",
 		"github": "https://github.com/iSteveB/Debuggez-une-application-React.JS",
-		"description": "724 events est un projet de formaiton sur le débogage et la finalisation d'un site web pour une agence événementielle. Le site existant présentait des bugs qui entravaient son bon fonctionnement. L'objectif était d'identifier ces problèmes à l'aide d'outils comme Chrome DevTools et React Developer Tools, puis de les résoudre en utilisant JavaScript et React. Le projet impliquait également la complétion d'un cahier de recette pour assurer la qualité du site à travers des tests unitaires et fonctionnels.",
+		"description": "724 events est un projet de formation sur le débogage et la finalisation d'un site web pour une agence événementielle. Le site existant présentait des bugs qui entravaient son bon fonctionnement. L'objectif était d'identifier ces problèmes à l'aide d'outils comme Chrome DevTools et React Developer Tools, puis de les résoudre en utilisant JavaScript et React. Le projet impliquait également la complétion d'un cahier de recette pour assurer la qualité du site à travers des tests unitaires et fonctionnels.",
 		"stack": ["javascript", "react", "jest"],
 		"objectives": [
 			"Examiner et comprendre le code existant",
