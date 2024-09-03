@@ -55,7 +55,7 @@ const TechStack = () => {
 	];
 
 	const renderStackItems = (stackItems: { name: string; icon: string }[]) => (
-    <ul className='flex flex-wrap gap-5 p-5'>
+    <ul className='flex flex-wrap justify-center gap-5 p-5 lg:justify-start'>
       {stackItems.map((item, index) => (
         <li className='flex flex-col items-center text-center' key={index}>
           <Tooltip tooltip={item.name}>
@@ -64,7 +64,7 @@ const TechStack = () => {
               alt={item.name}
               width={100}
               height={100}
-              className='mb-2 rounded-full bg-base-800 object-contain p-2'
+              className='mb-2 rounded-full bg-base-800 object-contain p-2 lg:size-20'
             />
           </Tooltip>
         </li>
