@@ -20,8 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='fr'>
-			<body className={`${athiti.className} flex flex-col items-center bg-base-900`}>
-				<div className='w-full bg-red-600 p-4 text-center text-xl font-bold text-neutral'>🚧 Développement en cours 🚧</div>
+			<body className={`${athiti.className} mb-24 flex flex-col items-center bg-base-900 lg:mb-0`}>
 				<Header />
 				{children}
 				<Footer/>
