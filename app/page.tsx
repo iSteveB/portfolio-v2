@@ -55,8 +55,8 @@ export default function Home() {
 					</div>
 				</Section>
 				<Section id='about' color='dark'>
-					<div className='flex items-center justify-center gap-8 py-20'>
-						<div className='flex w-1/2 flex-col gap-6'>
+					<div className='flex flex-col-reverse items-center justify-center gap-8 py-20 lg:flex-row'>
+						<div className='flex w-3/4 flex-col gap-6 lg:w-1/2'>
 							<Card
 								title='Performance'
 								text="Optimiser les sites web, pour augmenter la vitesse de chargement des pages et l'expérience utilisateur."
@@ -70,7 +70,7 @@ export default function Home() {
 								text='Améliorer la visibilité en ligne en utilisant des techniques de référencement naturel.'
 							/>
 						</div>
-						<div className='w-1/2 text-lg text-neutral'>
+						<div className='w-3/4 text-lg text-neutral lg:w-1/2'>
 							<h2 className='pb-4 text-5xl text-neutral'>
 								À propos
 							</h2>
