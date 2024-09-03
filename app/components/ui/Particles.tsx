@@ -174,7 +174,7 @@ const App = () => {
 			id='tsparticles'
 			particlesLoaded={particlesLoaded}
 			options={options}
-			className='absolute -left-32 top-0 z-30 size-[700px] rounded-full'
+			className='absolute -left-32 top-0 z-30 h-screen rounded-full lg:size-[700px]'
 		/>
 	);
 };
