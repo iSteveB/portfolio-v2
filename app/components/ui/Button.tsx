@@ -11,6 +11,7 @@ type ButtonProps = {
   direction?: 'left' | 'right';
   isInternalLink?: boolean;
   onClick?: () => void;
+  compact?: boolean;
 };
 
 const Button = ({
@@ -21,23 +22,24 @@ const Button = ({
   email,
   isInternalLink = false,
   onClick,
+  compact = false,
 }: ButtonProps) => {
   const [copied, setCopied] = useState(false);
 
-	const animationDirection = {
-		left: {
-			icon: 'absolute left-0 rounded-full bg-accent-100 p-3',
-			text: 'overflow-hidden whitespace-nowrap p-14 text-neutral group-hover:overflow-visible',
-			parent: 'group relative flex size-12 items-center justify-around overflow-hidden rounded-3xl border-e-2 border-accent-100 pl-2 transition-all duration-300 ease-in-out hover:w-40',
-		},
-		right: {
-			icon: 'absolute right-0 rounded-full bg-accent-100 p-3',
-			text: 'overflow-hidden whitespace-nowrap p-4 text-neutral group-hover:overflow-visible',
-			parent: 'group relative flex size-12 items-center overflow-hidden rounded-3xl border-s-2 border-accent-100 pl-2 transition-all duration-300 ease-in-out hover:w-40',
-		},
-	};
+  const animationDirection = {
+    left: {
+      icon: 'absolute left-0 rounded-full bg-accent-100 p-3',
+      text: 'overflow-hidden whitespace-nowrap p-14 text-neutral group-hover:overflow-visible',
+      parent: 'group relative flex size-12 items-center justify-around overflow-hidden rounded-3xl border-e-2 border-accent-100 pl-2 transition-all duration-300 ease-in-out hover:w-40',
+    },
+    right: {
+      icon: 'absolute right-0 rounded-full bg-accent-100 p-3',
+      text: 'overflow-hidden whitespace-nowrap p-4 text-neutral group-hover:overflow-visible',
+      parent: 'group relative flex size-12 items-center overflow-hidden rounded-3xl border-s-2 border-accent-100 pl-2 transition-all duration-300 ease-in-out hover:w-40',
+    },
+  };
 
-	const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (email) {
       event.preventDefault();
       navigator.clipboard.writeText(email).then(() => {
@@ -58,13 +60,23 @@ const Button = ({
 
   const ButtonContent = () => (
     <>
-      <span className={animationDirection[direction].text}>{copied ? "C'est copié !" : text}</span>
-      <span className={animationDirection[direction].icon}>{icon}</span>
+      {!compact && (
+        <span className={animationDirection[direction].text}>
+          {copied ? "C'est copié !" : text}
+        </span>
+      )}
+      <span className={compact ? 'rounded-full bg-accent-100 p-3' : animationDirection[direction].icon}>
+        {icon}
+      </span>
     </>
   );
 
+  const buttonClass = compact
+    ? 'flex items-center justify-center size-12 rounded-full bg-base-800 hover:bg-base-700 transition-colors duration-300'
+    : animationDirection[direction].parent;
+
   return (
-    <motion.div className={animationDirection[direction].parent}>
+    <motion.div className={buttonClass}>
       {isInternalLink ? (
         <a
           href={link}
