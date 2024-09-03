@@ -21,7 +21,7 @@ export default function Home() {
 					<Navigation />
 				</div>
 				<Section id='hero' color='light' css='lg:overflow-hidden'>
-					<div className='flex flex-col-reverse items-center justify-center lg:flex-row lg:gap-52'>
+					<div className='flex flex-col-reverse items-center justify-center p-8 lg:flex-row lg:gap-52 lg:p-0'>
 						<div
 							className={`${petrona.className} mb-16 flex flex-col items-center justify-center gap-6 text-center lg:mb-0 lg:items-start lg:justify-start lg:text-start`}>
 							<div>
@@ -56,7 +56,7 @@ export default function Home() {
 				</Section>
 				<Section id='about' color='dark'>
 					<div className='flex flex-col-reverse items-center justify-center gap-8 py-20 lg:flex-row'>
-						<div className='flex w-3/4 flex-col gap-6 lg:w-1/2'>
+						<div className='flex w-full flex-col gap-6 p-8 lg:w-1/2'>
 							<Card
 								title='Performance'
 								text="Optimiser les sites web, pour augmenter la vitesse de chargement des pages et l'expérience utilisateur."
@@ -70,7 +70,7 @@ export default function Home() {
 								text='Améliorer la visibilité en ligne en utilisant des techniques de référencement naturel.'
 							/>
 						</div>
-						<div className='w-3/4 text-lg text-neutral lg:w-1/2'>
+						<div className='w-full p-8 text-lg text-neutral lg:w-1/2'>
 							<h2 className='pb-4 text-5xl text-neutral'>
 								À propos
 							</h2>
@@ -148,7 +148,7 @@ export default function Home() {
 					</div>
 				</Section>
 
-				<Section id='portfolio' color='light'>
+				<Section id='portfolio' color='light' css='p-8'>
 					<TechStack />
 				</Section>
 
