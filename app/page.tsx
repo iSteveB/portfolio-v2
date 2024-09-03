@@ -10,6 +10,7 @@ import Link from 'next/link';
 import TechStack from './components/section/TechStack';
 import BentoGrid from './components/section/BentoGrid';
 import Navigation from './components/layout/Navigation';
+import Tooltip from './components/ui/Tooltip';
 
 const petrona = Petrona({ subsets: ['latin'], weight: '400' });
 
@@ -29,7 +30,7 @@ export default function Home() {
 									Hello !
 								</span>
 							</div>
-							<h1 className='text-5xl text-neutral lg:max-w-96'>
+							<h1 className='text-4xl leading-normal text-neutral lg:max-w-96 lg:text-5xl'>
 								<span>Je suis Steve, </span>
 								<strong>
 									Développeur web <br /> Next.js & NestJS
@@ -135,12 +136,22 @@ export default function Home() {
 									maux de tête).Si vous cherchez un
 									développeur passionné, créatif et toujours
 									partant pour relever de nouveaux défis,
-									contactez-moi en cliquant juste{' '}
-									<Link
-										href='/contact'
-										className='text-accent-100 underline'>
-										ici
-									</Link>{' '}
+									contactez-moi par{' '}
+									<Tooltip
+										tooltip='Copier mon email'
+										copyText='contact@stevebasse.fr'>
+										<span className='cursor-pointer text-accent-100 underline'>
+											email
+										</span>
+									</Tooltip>
+									{' '}ou sur{' '}
+									<a
+										href='https://www.linkedin.com/in/steve-basse'
+										className='text-accent-100 underline'
+										target='_blank'
+										rel='noreferrer'>
+										LinkedIn
+									</a>{' '}
 									!
 								</p>
 							</div>
