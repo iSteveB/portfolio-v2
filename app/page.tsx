@@ -33,7 +33,7 @@ export default function Home() {
 							<h1 className='text-4xl leading-normal text-neutral lg:max-w-96 lg:text-5xl'>
 								<span>Je suis Steve, </span>
 								<strong>
-									Développeur web <br /> Next.js & NestJS
+									Développeur web <br /> React & Node.js
 								</strong>
 							</h1>
 							<div className='mt-4 flex gap-2'>
