@@ -30,11 +30,10 @@ export default function Home() {
 									Hello !
 								</span>
 							</div>
-							<h1 className='text-4xl leading-normal text-neutral lg:max-w-96 lg:text-5xl'>
+							<h1 className='flex flex-col gap-2 text-4xl text-neutral lg:max-w-96 lg:text-5xl'>
 								<span>Je suis Steve, </span>
-								<strong>
-									Développeur web <br /> React & Node.js
-								</strong>
+								<strong>Développeur web</strong>
+								<strong> React & Node.js</strong>
 							</h1>
 							<div className='mt-4 flex gap-2'>
 								<Tag text='Front-End' />
@@ -143,8 +142,8 @@ export default function Home() {
 										<span className='cursor-pointer text-accent-100 underline'>
 											email
 										</span>
-									</Tooltip>
-									{' '}ou sur{' '}
+									</Tooltip>{' '}
+									ou sur{' '}
 									<a
 										href='https://www.linkedin.com/in/steve-basse'
 										className='text-accent-100 underline'

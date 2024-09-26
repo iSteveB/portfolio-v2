@@ -254,8 +254,8 @@
 		],
 		"role": "FullStack",
 		"challenges": {
-			"description": "Un défi majeur est la conception et l'implémentation d'un système de feed personnalisé efficace, capable de gérer un grand nombre d'utilisateurs et de recettes tout en restant performant.",
-			"resolution": "Pour relever ce défi, il faudra mettre en place un système de mise en cache intelligent, utiliser des techniques de pagination et de chargement à la demande, et optimiser les requêtes de base de données. L'utilisation de websockets pour les mises à jour en temps réel pourrait également être envisagée pour améliorer la réactivité du feed. De plus, l'implémentation d'un algorithme de recommandation personnalisé permettra d'afficher du contenu pertinent pour chaque utilisateur, augmentant ainsi l'engagement sur la plateforme."
+			"description": "Un défi ici est la conception et l'implémentation d'un système de feed personnalisé efficace, capable de gérer un grand nombre d'utilisateurs et de recettes tout en restant performant.",
+			"resolution": "Pour relever ce défi, il faudra mettre en place un système de mise en cache intelligent, utiliser des techniques de pagination et de chargement à la demande, et optimiser les requêtes de base de données. De plus, l'implémentation d'un algorithme de recommandation personnalisé permettra d'afficher du contenu pertinent pour chaque utilisateur, augmentant ainsi l'engagement sur la plateforme."
 		},
 		"date": "2024-07-01",
 		"inProgress": true
