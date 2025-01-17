@@ -88,7 +88,6 @@ export default function Home() {
 									<strong className='text-accent-100'>
 										développeur web
 									</strong>{' '}
-									depuis 4 ans.
 								</p>
 								<p>
 									J&apos;ai troqué ma carrière de cuistot
