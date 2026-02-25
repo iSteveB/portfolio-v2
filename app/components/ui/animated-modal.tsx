@@ -49,11 +49,7 @@ export const ModalTrigger = ({
 }) => {
 	const { setOpen } = useModal();
 	return (
-		<button
-			className={cn(
-				className
-			)}
-			onClick={() => setOpen(true)}>
+		<button className={cn(className)} onClick={() => setOpen(true)}>
 			{children}
 		</button>
 	);
@@ -76,7 +72,7 @@ export const ModalBody = ({
 		}
 	}, [open]);
 
-	const modalRef = useRef(null);
+	const modalRef = useRef<HTMLDivElement>(null);
 	const { setOpen } = useModal();
 	useOutsideClick(modalRef, () => setOpen(false));
 
@@ -102,7 +98,7 @@ export const ModalBody = ({
 						ref={modalRef}
 						className={cn(
 							'min-h-[50%] max-h-[90%] md:max-w-[60%] bg-base-700 border border-transparent md:rounded-2xl relative z-50 flex flex-col flex-1 overflow-hidden',
-							className
+							className,
 						)}
 						initial={{
 							opacity: 0,
@@ -142,11 +138,7 @@ export const ModalContent = ({
 	children: ReactNode;
 	className?: string;
 }) => {
-	return (
-		<div className={cn(className)}>
-			{children}
-		</div>
-	);
+	return <div className={cn(className)}>{children}</div>;
 };
 
 export const ModalFooter = ({
@@ -157,11 +149,7 @@ export const ModalFooter = ({
 	className?: string;
 }) => {
 	return (
-		<div
-			className={cn(
-				'flex justify-end gap-1',
-				className
-			)}>
+		<div className={cn('flex justify-end gap-1', className)}>
 			{children}
 		</div>
 	);
@@ -188,9 +176,7 @@ const Overlay = ({ className }: { className?: string }) => {
 const CloseIcon = () => {
 	const { setOpen } = useModal();
 	return (
-		<button
-			onClick={() => setOpen(false)}
-			className='group ml-auto p-4'>
+		<button onClick={() => setOpen(false)} className='group ml-auto p-4'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='24'

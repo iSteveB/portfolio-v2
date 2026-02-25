@@ -1,11 +1,11 @@
 'use client';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 type ButtonProps = {
   text: string;
-  icon: JSX.Element;
+  icon: React.ReactNode;
   link?: string;
   email?: string;
   direction?: 'left' | 'right';
